@@ -1,3 +1,5 @@
+
+
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
@@ -6,7 +8,7 @@ plugins {
 
 kotlin {
     android()
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -57,6 +59,13 @@ kotlin {
             iosArm64Test.dependsOn(this)
             iosSimulatorArm64Test.dependsOn(this)
         }
+    }
+}
+
+sqldelight {
+    database("NoteDatabase") {
+        packageName = "com.alireza.firstkmmapp.database"
+        sourceFolders = listOf("sqldelight")
     }
 }
 
