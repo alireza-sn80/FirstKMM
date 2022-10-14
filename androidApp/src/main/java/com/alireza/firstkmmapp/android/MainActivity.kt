@@ -18,7 +18,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.alireza.firstkmmapp.android.note_detail.NoteDetailScreen
-import com.plcoding.noteappkmm.android.note_list.NoteListScreen
+import com.alireza.firstkmmapp.android.note_list.NoteListScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @Composable
